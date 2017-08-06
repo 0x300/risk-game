@@ -1,0 +1,413 @@
+{
+    "alaska": {
+        "displayName": "Alaska",
+        "continent": "northAmerica",
+        "adjacentTerritories": [
+            "northwestTerritory",
+            "alberta",
+            "kamchatka"
+        ]
+    },
+    "alberta": {
+        "displayName": "Alberta",
+        "continent": "northAmerica",
+        "adjacentTerritories": [
+            "alaska",
+            "northwestTerritory",
+            "ontario",
+            "westernUnitedStates"
+        ]
+    },
+    "centralAmerica": {
+        "displayName": "Central America",
+        "continent": "northAmerica",
+        "adjacentTerritories": [
+            "westernUnitedStates",
+            "venezuela",
+            "easternUnitedStates"
+        ]
+    },
+    "easternCanada": {
+        "displayName": "Eastern Canada",
+        "continent": "northAmerica",
+        "adjacentTerritories": [
+            "greenland",
+            "ontario",
+            "easternUnitedStates"
+        ]
+    },
+    "easternUnitedStates": {
+        "displayName": "Eastern United States",
+        "continent": "northAmerica",
+        "adjacentTerritories": [
+            "easternCanada",
+            "ontario",
+            "westernUnitedStates",
+            "centralAmerica"
+        ]
+    },
+    "greenland": {
+        "displayName": "Greenland",
+        "continent": "northAmerica",
+        "adjacentTerritories": [
+            "northwestTerritory",
+            "ontario",
+            "easternCanada",
+            "iceland"
+        ]
+    },
+    "northwestTerritory": {
+        "displayName": "Northwest Territory",
+        "continent": "northAmerica",
+        "adjacentTerritories": [
+            "greenland",
+            "ontario",
+            "alberta",
+            "alaska"
+        ]
+    },
+    "ontario": {
+        "displayName": "Ontario",
+        "continent": "northAmerica",
+        "adjacentTerritories": [
+            "northwestTerritory",
+            "alberta",
+            "westernUnitedStates",
+            "easternUnitedStates",
+            "greenland"
+        ]
+    },
+    "westernUnitedStates": {
+        "displayName": "Western United States",
+        "continent": "northAmerica",
+        "adjacentTerritories": [
+            "centralAmerica",
+            "easternUnitedStates",
+            "alberta",
+            "ontario"
+        ]
+    },
+    "argentina": {
+        "displayName": "Argentina",
+        "continent": "southAmerica",
+        "adjacentTerritories": [
+            "peru",
+            "brazil"
+        ]
+    },
+    "brazil": {
+        "displayName": "Brazil",
+        "continent": "southAmerica",
+        "adjacentTerritories": [
+            "venezuela",
+            "peru",
+            "argentina",
+            "northAfrica"
+        ]
+    },
+    "peru": {
+        "displayName": "Peru",
+        "continent": "southAmerica",
+        "adjacentTerritories": [
+            "venezuela",
+            "brazil",
+            "argentina"
+        ]
+    },
+    "venezuela": {
+        "displayName": "Venezuela",
+        "continent": "southAmerica",
+        "adjacentTerritories": [
+            "centralAmerica",
+            "brazil",
+            "peru"
+        ]
+    },
+    "centralAfrica": {
+        "displayName": "Central Africa",
+        "continent": "africa",
+        "adjacentTerritories": [
+            "northAfrica",
+            "eastAfrica",
+            "southAfrica"
+        ]
+    },
+    "eastAfrica": {
+        "displayName": "East Africa",
+        "continent": "africa",
+        "adjacentTerritories": [
+            "egypt",
+            "northAfrica",
+            "centralAfrica",
+            "southAfrica",
+            "madagascar"
+        ]
+    },
+    "egypt": {
+        "displayName": "Egypt",
+        "continent": "africa",
+        "adjacentTerritories": [
+            "northAfrica",
+            "eastAfrica",
+            "middleEast",
+            "southernEurope"
+        ]
+    },
+    "madagascar": {
+        "displayName": "Madagascar",
+        "continent": "africa",
+        "adjacentTerritories": [
+            "southAfrica",
+            "eastAfrica"
+        ]
+    },
+    "northAfrica": {
+        "displayName": "North Africa",
+        "continent": "africa",
+        "adjacentTerritories": [
+            "brazil",
+            "westernEurope",
+            "egypt",
+            "eastAfrica",
+            "centralAfrica",
+            "southernEurope"
+        ]
+    },
+    "southAfrica": {
+        "displayName": "South Africa",
+        "continent": "africa",
+        "adjacentTerritories": [
+            "madagascar",
+            "centralAfrica",
+            "eastAfrica"
+        ]
+    },
+    "greatBritain": {
+        "displayName": "Great Britain",
+        "continent": "europe",
+        "adjacentTerritories": [
+            "iceland",
+            "westernEurope",
+            "scandinavia",
+            "northernEurope"
+        ]
+    },
+    "iceland": {
+        "displayName": "Iceland",
+        "continent": "europe",
+        "adjacentTerritories": [
+            "greenland",
+            "greatBritain",
+            "scandinavia"
+        ]
+    },
+    "northernEurope": {
+        "displayName": "Northern Europe",
+        "continent": "europe",
+        "adjacentTerritories": [
+            "scandinavia",
+            "greatBritain",
+            "westernEurope",
+            "southernEurope",
+            "russia"
+        ]
+    },
+    "russia": {
+        "displayName": "Russia",
+        "continent": "europe",
+        "adjacentTerritories": [
+            "scandinavia",
+            "northernEurope",
+            "southernEurope",
+            "ural",
+            "afghanistan",
+            "middleEast"
+        ]
+    },
+    "scandinavia": {
+        "displayName": "Scandinavia",
+        "continent": "europe",
+        "adjacentTerritories": [
+            "iceland",
+            "northernEurope",
+            "russia"
+        ]
+    },
+    "southernEurope": {
+        "displayName": "Southern Europe",
+        "continent": "europe",
+        "adjacentTerritories": [
+            "westernEurope",
+            "northernEurope",
+            "northAfrica",
+            "egypt",
+            "russia",
+            "middleEast"
+        ]
+    },
+    "westernEurope": {
+        "displayName": "Western Europe",
+        "continent": "europe",
+        "adjacentTerritories": [
+            "northAfrica",
+            "southernEurope",
+            "northernEurope",
+            "greatBritain"
+        ]
+    },
+    "middleEast": {
+        "displayName": "Middle East",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "egypt",
+            "eastAfrica",
+            "southernEurope",
+            "russia",
+            "afghanistan",
+            "india"
+        ]
+    },
+    "afghanistan": {
+        "displayName": "Afghanistan",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "russia",
+            "middleEast",
+            "ural",
+            "india",
+            "china"
+        ]
+    },
+    "ural": {
+        "displayName": "Ural",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "russia",
+            "siberia",
+            "afghanistan",
+            "china"
+        ]
+    },
+    "siberia": {
+        "displayName": "Siberia",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "ural",
+            "yakutsk",
+            "irkutsk",
+            "china",
+            "mongolia"
+        ]
+    },
+    "china": {
+        "displayName": "China",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "mongolia",
+            "siberia",
+            "ural",
+            "afghanistan",
+            "india",
+            "southeastAsia"
+        ]
+    },
+    "india": {
+        "displayName": "India",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "southeastAsia",
+            "china",
+            "afghanistan",
+            "middleEast"
+        ]
+    },
+    "southeastAsia": {
+        "displayName": "Southeast Asia",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "india",
+            "china",
+            "indonesia"
+        ]
+    },
+    "mongolia": {
+        "displayName": "Mongolia",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "china",
+            "siberia",
+            "irkutsk",
+            "japan"
+        ]
+    },
+    "irkutsk": {
+        "displayName": "Irkutsk",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "mongolia",
+            "siberia",
+            "yakutsk",
+            "kamchatka"
+        ]
+    },
+    "yakutsh": {
+        "displayName": "Yakutsh",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "siberia",
+            "irkutsk",
+            "kamchatka"
+        ]
+    },
+    "japan": {
+        "displayName": "Japan",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "mongolia",
+            "kamchatka"
+        ]
+    },
+    "kamchatka": {
+        "displayName": "Kamchatka",
+        "continent": "asia",
+        "adjacentTerritories": [
+            "yakutsk",
+            "irkutsk",
+            "mongolia",
+            "alaska"
+        ]
+    },
+    "indonesia": {
+        "displayName": "Indonesia",
+        "continent": "australia",
+        "adjacentTerritories": [
+            "southeastAsia",
+            "newGuinea",
+            "westernAustralia"
+        ]
+    },
+    "newGuinea": {
+        "displayName": "New Guinea",
+        "continent": "australia",
+        "adjacentTerritories": [
+            "indonesia",
+            "easternAustralia"
+        ]
+    },
+    "westernAustralia": {
+        "displayName": "Western Australia",
+        "continent": "australia",
+        "adjacentTerritories": [
+            "indonesia",
+            "easternAustralia"
+        ]
+    },
+    "easternAustralia": {
+        "displayName": "Eastern Australia",
+        "continent": "australia",
+        "adjacentTerritories": [
+            "westernAustralia",
+            "newGuinea"
+        ]
+    }
+}

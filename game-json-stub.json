@@ -1,0 +1,54 @@
+{
+    "games":[
+        {
+            "id": "hash",
+            "players": [
+                "player_id1",
+                "player_id2"
+            ],
+            "territories": {
+                "Alaska": {
+                    "troops": 0,
+                    "owner": "",
+                    "adjacentTerritories": {}
+                },
+                "northwestTerritory": {
+                    "troops": 0,
+                    "owner": "",
+                    "adjacentTerritories": {}
+                },
+                "alberta": {
+                    "troops": 0,
+                    "owner": "",
+                    "adjacentTerritories": {}
+                },
+                "ontario": {
+                    "troops": 0,
+                    "owner": "",
+                    "adjacentTerritories": {}
+                },
+                "westernUnitedStates": {
+                    "troops": 0,
+                    "owner": "",
+                    "adjacentTerritories": {}
+                },
+                "easternUnitedStates": {
+                    "troops": 0,
+                    "owner": "",
+                    "adjacentTerritories": {}
+                },
+                "greenland": {
+                    "troops": 0,
+                    "owner": "",
+                    "adjacentTerritories": {}
+                },
+                "centralAmerica": {
+                    "troops": 0,
+                    "owner": "",
+                    "adjacentTerritories": {}
+                }
+            }
+        }
+    ],
+    "accounts": []
+}
