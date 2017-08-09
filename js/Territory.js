@@ -11,7 +11,9 @@ Territory.prototype.addTroops = function(troopsToAdd) {
 }
 
 Territory.prototype.removeTroops = function(troopsToRemove) {
-    return this.troopCount -= troopsToRemove;
+    this.troopCount -= troopsToRemove;
+    if(this.troopCount < 0) this.troopCount = 0;
+    return this.troopCount;
 }
 
 Territory.prototype.isAdjacentTo = function(territoryName) {
