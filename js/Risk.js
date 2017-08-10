@@ -1,15 +1,20 @@
-var territoryConfig = require('./json/territories.json');
-var Territory = require('./Territory.js');
-var territories = {};
+import territoryInfo from '../json/territories.json'
+import Territory from './Territory.js'
 
 function Risk() {
-    this.territories = initTerritories();
+    this.territories = this.initTerritories()
 }
 
-function initTerritories() {
-    return Object.keys(territoryConfig).map(function(name, index){
-        return new Territory(name, territoryConfig[name]);
-    });
+Risk.prototype.initTerritories = () => {
+    const territories = {}
+
+    Object.keys(territoryInfo).map(function(name, index){
+        territories[name] = new Territory(name, territoryInfo[name])
+    })
+
+    return territories
 }
 
-var risk = new Risk();
+var risk = new Risk()
+
+module.exports = Risk

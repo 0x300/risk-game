@@ -9,8 +9,24 @@ describe('Territory', function(){
         territory = new Territory('Alberta', territoryInfo['alberta']);
     })
 
+    it('should have a name string property', () => {
+        expect(territory.name).to.be.a('string')
+    })
+
+    it('should have a display name string property', () => {
+        expect(territory.displayName).to.be.a('string')
+    })
+
+    it('should have an adjacent territory array with territories in it', () => {
+        expect(territory.adjacentTerritories).to.be.an('array').and.not.be.lengthOf(0)
+    })
+
     it('should have an initial troop count of 0', () => {
         expect(territory.troopCount).to.equal(0)
+    })
+
+    it('should have no initial occupant', () => {
+        expect(territory.occupant).to.be.string('')
     })
 
     it('addTroops should be able to add troops', () => {
