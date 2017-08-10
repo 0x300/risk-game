@@ -15,6 +15,4 @@ Risk.prototype.initTerritories = () => {
     return territories
 }
 
-var risk = new Risk()
-
 module.exports = Risk

@@ -1,5 +1,6 @@
 import {expect} from 'chai'
 import Risk from '../js/Risk'
+import Territory from '../js/Territory'
 
 describe('Risk', () => {
     let risk
@@ -16,10 +17,7 @@ describe('Risk', () => {
         expect(risk.territories['alberta'].name).to.be.a('string').and.not.have.lengthOf(0)
     })
 
-    // it('territories should be constructed from Territory func', () => {
-        // console.log(risk.territories['iceland'].constructor);
-
-        // Actually is "Function Territory".. how do I check that?
-        // expect(risk.territories['iceland'].constructor).to.be('Territory')
-    // })
+    it('territories should be constructed from Territory func', () => {
+        expect(risk.territories['iceland'].constructor).to.equal(Territory)
+    })
 })
