@@ -1,6 +1,6 @@
-import {expect} from 'chai'
-import Territory from '../js/Territory'
-import territoryInfo from '../json/territories.json'
+const expect = require('chai').expect
+const Territory = require('../js/Territory')
+const territoryInfo = require('../json/territories.json')
 
 describe('Territory', function(){
     let territory;

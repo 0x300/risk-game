@@ -1,5 +1,5 @@
-import territoryInfo from '../json/territories.json'
-import Territory from './Territory.js'
+const territoryInfo = require('../json/territories.json')
+const Territory = require('./Territory.js')
 
 function Risk() {
     this.territories = this.initTerritories()

@@ -4,16 +4,12 @@
   "description": "Risk game",
   "main": "Risk.js",
   "scripts": {
-    "test": "mocha --require babel-polyfill --compilers js:babel-register",
+    "test": "mocha",
     "test:watch": "npm run test -- -w"
   },
   "author": "Josh Lindoo",
   "license": "ISC",
   "devDependencies": {
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-register": "^6.24.1",
     "chai": "^4.1.1",
     "mocha": "^3.5.0"
   }
