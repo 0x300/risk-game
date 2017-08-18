@@ -101,42 +101,63 @@ describe('Territories', function(){
     describe('#isAdjacentTo', () => {
         it('should return true if territory is adjacent', () => {
             territories.map((territory) => {
-                expect(territory.isAdjacentTo('alaska')).to.be.true
+                expect(territory.isAdjacentTo(territory.adjacentTerritories[0])).to.be.true
             })
         })
 
         it('should return false if territory is not adjacent', () => {
             territories.map((territory) => {
-                expect(territory.isAdjacentTo('iceland')).to.be.false
+                territories.map((otherTerritory) => {
+                    // just check all territories that aren't adjacent
+                    if(territory.name === otherTerritory.name) return;
+                    if(territory.adjacentTerritories.includes(otherTerritory.name)) return;
+
+                    expect(territory.canAttack(otherTerritory.name)).to.be.false
+                })
             })
         })
     })
 
     describe('#canAttack', () => {
-        it('should require attacked territory to be adjacent to return true', () => {
+        it('should return true if enough troops and attacked territory is adjacent', () => {
             territories.map((territory) => {
                 territory.addTroops(2)
-                expect(territory.canAttack('ontario')).to.be.true
+
+                territory.adjacentTerritories.map((adjacentTerritory) => {
+                    expect(territory.canAttack(adjacentTerritory)).to.be.true
+                })
             })
         })
 
         it('should return false if attacked territory is not adjacent', () => {
             territories.map((territory) => {
                 territory.addTroops(2)
-                expect(territory.canAttack('greenland')).to.be.false
+
+                territories.map((otherTerritory) => {
+                    // just check all territories that aren't adjacent
+                    if(territory.name === otherTerritory.name) return;
+                    if(territory.adjacentTerritories.includes(otherTerritory.name)) return;
+
+                    expect(territory.canAttack(otherTerritory.name)).to.be.false
+                })
             })
         })
 
-        it('require enough troops for attack to return true', () => {
+        it('should require enough troops for attack to return true', () => {
             territories.map((territory) => {
+
                 territory.addTroops(2)
-                expect(territory.canAttack('alaska')).to.be.true
+                territory.adjacentTerritories.map((adjacentTerritory) => {
+                    expect(territory.canAttack(adjacentTerritory)).to.be.true
+                })
             })
         })
 
         it('should return false if there are not enough troops to attack', () => {
             territories.map((territory) => {
-                expect(territory.canAttack('alaska')).to.be.false
+                territory.adjacentTerritories.map((adjacentTerritory) => {
+                    expect(territory.canAttack(adjacentTerritory)).to.be.false
+                })
             })
         })
     })
