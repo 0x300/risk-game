@@ -3,10 +3,10 @@ const Territory = require('../js/Territory')
 const territoryInfo = require('../json/territories.json')
 
 describe('Territory', function(){
-    let territory;
+    let territory
 
     beforeEach(() => {
-        territory = new Territory('Alberta', territoryInfo['alberta']);
+        territory = new Territory('Alberta', territoryInfo['alberta'])
     })
 
     it('should have a name string property', () => {
