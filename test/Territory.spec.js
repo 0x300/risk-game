@@ -43,6 +43,34 @@ describe('Territories', function(){
         })
     })
 
+    it('adjacent territories should have bi-directional mapping between them', () => {
+        // for each territory
+        territories.map((initialTerritory) => {
+
+            // check each adjacent territory
+            initialTerritory.adjacentTerritories.map((adjTerritoryName) => {
+                const adjTerritoryObj = lookupTerritoryObj(adjTerritoryName, territories)
+
+                // TODO: this should be it's own test verifying that all the names of territories
+                //       in the adjacency lists correspond to acutal territories
+                expect(adjTerritoryObj).to.not.be.undefined
+
+                // make sure it has a mapping back to the initial territory
+                if(!adjTerritoryObj.adjacentTerritories.includes(initialTerritory.name)) {
+                    console.log(`>> WARN:: ${initialTerritory.name} not in ${adjTerritoryObj.name}'s adjacency list!`)
+                }
+
+                expect(adjTerritoryObj.adjacentTerritories.includes(initialTerritory.name)).to.be.true
+            })
+        })
+
+        function lookupTerritoryObj(territoryName, territoryArr) {
+            return territoryArr.find((territoryObj) => {
+                return territoryObj.name === territoryName
+            })
+        }
+    })
+
     describe('#addTroops', () => {
         it('should be able to add troops', () => {
             territories.map((territory) => {
