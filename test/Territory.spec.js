@@ -3,7 +3,7 @@ const Territory = require('../js/Territory')
 const territoryInfo = require('../json/territories.json')
 
 describe('Territories', function(){
-    let territories;
+    let territories
 
     beforeEach(() => {
         territories = []
